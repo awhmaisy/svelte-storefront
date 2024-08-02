@@ -7,6 +7,7 @@ import { env } from '$env/dynamic/private'
 import { REDIRECT_QUERY } from '$lib/server/data'
 import { isLocalPath } from '$lib/utils'
 
+
 const getLocale = (event: RequestEvent<Partial<Record<string, string>>>): Locale => {
   const { locale } = event.params
   const defaultParam = 'en-us'
